@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .highlight {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="item">Item 1</li>
+    <li class="item">Item 2</li>
+    <li class="target">Item 3 (Target)</li>
+    <li class="item">Item 4</li>
+    <li class="item">Item 5</li>
+  </ul>
+
+  <button>Highlight Target</button>
+
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        // Select only the element with class "target" and add class "highlight" to it
+        $('.item').filter('.target').addClass('highlight');
+      });
+    });
+  </script>
+</body>
+</html>

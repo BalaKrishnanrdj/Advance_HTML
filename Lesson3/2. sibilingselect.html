@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibiling Selector</title>
+    <style>
+        
+        div ~ p{
+            /* General Sibling Selector */
+            color: cornflowerblue;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        div + p{
+            /* Adjacent Sibling Selector */
+            color: burlywood;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+    </style>
+
+</head>
+<body>
+<div class="sibiling selectors">Sibling Selector
+    <div>
+        <p>Paragrap 1</p>
+        <p>Paragrap 2</p>
+            <div>
+                <p>Inner Para 1</p>
+                <p>Inner Para 2</p>
+                <p>Inner Para 3</p>
+            </div>
+            <h2>Affect the Adjacent Sibling Selector</h2>
+            <p>Paragrap 3</p>
+            <p>Paragrap 4</p>
+    </div>
+    <!-- <h3>Tilde character, ~ General Sibling Selector</h3> -->
+    <p>Paragrap 5</p>
+    <p>Paragrap 6</p>
+    <p>Paragrap 7</p>
+</div>
+<p>paragrap 8</p>
+<p>paragrap 9</p>
+
+    
+
+</body>
+</html>

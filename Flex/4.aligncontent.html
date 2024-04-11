@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlignContent</title>
+  <style>
+  .flex-container {
+  padding: 0;
+  margin: 0;
+  /* width: 200px; */
+  list-style: none;
+  float: left;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid silver;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-start { 
+  align-items: end; 
+}
+
+.flex-end { 
+  align-content: flex-end; 
+}
+
+.center { 
+  align-items: center; 
+}
+
+
+.space-between { 
+  align-content: space-between; 
+}  
+
+
+.space-around { 
+  align-content: space-around; 
+}
+
+
+.stretch { 
+  align-content: stretch; 
+}
+
+.flex-item {
+  background: cornflowerblue;
+  color: white;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <ul class="flex-container flex-start">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+  </ul>
+  
+  <ul class="flex-container flex-end">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+  </ul>
+  
+  <ul class="flex-container center">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+  </ul>
+  
+  <ul class="flex-container space-between">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+  </ul>
+  
+  <ul class="flex-container space-around">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+  </ul>
+  
+  <ul class="flex-container stretch">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .highlight {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+
+  <button>Highlight Previous</button>
+
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        // Select the immediately preceding sibling element of the fifth list item and add class "highlight" to it
+        $('li:nth-child(5)').prev().addClass('highlight'); 
+        // $('li:nth-child(5)').prevAll().addClass('highlight'); 
+        // $('li:nth-child(5)').prevUntil('li:first-child').addClass('highlight');
+      });
+    });
+  </script>
+</body>
+</html>

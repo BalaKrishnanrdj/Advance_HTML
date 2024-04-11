@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      height: 200px;
+      width: 200px;
+      background-color: aqua;
+      display: inline-block;
+    }
+    .box2{
+      height: 0px;
+      visibility: hidden;
+      transition: all 5s linear ;
+    }
+    .parent:hover .box2{
+      height: 200px;
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="box box1" >box1</div>
+    <div class="box box2">box2</div>
+  </div>
+</body>
+</html>

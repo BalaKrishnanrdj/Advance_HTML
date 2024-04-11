@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .highlight {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li id="target">Item 3 (Target)</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+
+  <button>Highlight Siblings</button>
+
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        // Select all sibling elements of the element with id "target" and add class "highlight" to them 
+        $('#target').siblings().addClass('highlight');                      
+      });
+    });
+  </script>
+</body>
+</html>

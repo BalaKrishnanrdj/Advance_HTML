@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+         h1{
+            text-align: center;
+            color: cornflowerblue;
+        }
+        #id{
+            
+            background-color: pink;
+        }
+        h4{
+            background-color: darkseagreen;
+        }
+        .class{
+            background-color: aquamarine;
+        }
+       
+        article h2 {
+            background-color: dodgerblue;
+        }
+        article > p{
+            background-color: grey;
+        }
+        h2 + p {
+            font-style: italic;
+            background-color: yellow;
+        }
+        /* .parent h2 + p{ 
+            background-color: blue;
+        } */
+    </style>
+</head>
+<body>
+    <section id="id">ID Selector</section>
+    <h4>Type Selector</h4>
+    <h2 class="class">Class Selector -> descendant or direct child selectors.</h2>
+    <h1>Child Selector-> descendant or direct child selectors.</h1>
+    <h1>Descendant Child Selector</h1>
+    <article>
+        <h2>Descendant Child Selector(article h2)</h2>
+        <div>
+          <h2>Created by spacing apart elements within a selector</h2>
+        </div>
+        <h2>Select all h2 element inside the article</h2>
+    </article>
+
+    
+    <article>
+        <h1>Direct Child Selector(article > p)</h1>   
+        <p>Only the direct children of a parent element selected</p>
+        <div>
+            <p>Not every instance of the element</p>
+        </div>
+        <p>Only the direct children of a parent element selected</p>
+    </article>
+    
+    <h1>Sibiling Selector->Adjacent or General Child Selectors.</h1>
+    <h1>Adjacent Sibling Selector </h1>
+    <div class="container">
+        <h2>Section 1</h2>
+        <h3>Affect (h2 + p) selector</h3>
+        <p>This is the content of section 1.</p>
+        <h2>Section 2</h2>
+        <p>(+)helps you target and style specific elements that come right after .</p>
+        <p>it is second Paragraph Tag</p>
+    </div>
+    <div class="parent">
+        <h2>blue</h2>
+        <p>yellow</p>
+        <p>green</p>
+    </div>
+</body>
+</html>

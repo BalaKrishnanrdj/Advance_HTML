@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .highlight {
+      color: red;
+    }
+   
+  </style>
+</head>
+<body>
+  <div id="exampleDiv">Initial Text</div>
+
+  <button id="exampleButton">Apply Changes</button>
+
+  <script>
+    $(document).ready(function() {
+      // Add class "highlight" to the div
+      $('#exampleButton').click(function() {
+        $('#exampleDiv').addClass('highlight');
+
+        // Set the "title" attribute of the div
+        $('#exampleDiv').attr('title', 'This is a highlighted div');
+
+        // Check if the div has class "highlight"
+        var hasHighlightClass = $('#exampleDiv').hasClass('highlight');
+        console.log('Has class "highlight"?', hasHighlightClass);
+
+        // Set a property on the div
+        $('#exampleDiv').prop('data-prop', 'someValue');
+
+        // Remove the "title" attribute from the div
+        $('#exampleDiv').removeAttr('title');
+
+        // Remove class "highlight" from the div
+        $('#exampleDiv').removeClass('highlight');
+
+        // Remove a property from the div
+        // $('#exampleDiv').removeProp('data-prop');
+
+        // Toggle class "highlight" on the div
+        $('#exampleDiv').toggleClass('highlight');
+
+        // Get the value of the div's text content
+        var divText = $('#exampleDiv').text();
+        console.log('Text content:', divText);
+
+        // Set the value of the div's text content
+        $('#exampleDiv').text('Changed Text');
+      });
+    });
+  </script>
+</body>
+</html>

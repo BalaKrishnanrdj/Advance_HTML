@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        /* Attribute Present Selector */
+        a[target] {
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            background-color: gold;
+        }
+        /* attribute equal selector */
+        a[href="https://www.zoho.com/all-products.html"] {
+            background-color: aqua;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        input[type="text"]{
+            border: 2px solid red;
+            background-color: rgb(56, 168, 56);
+        }
+        /*Attribute Contains Selector*/
+        span[class*="test"]{
+            margin-right: 20px;
+            background: gold;
+        }
+        /* attribute begins selector */
+        p[class^="content"]{
+            color: red;
+            background-color: yellowgreen;
+        }
+       
+        /* Attribute Ends With Selector */
+        span[class$="end"]{
+            background-color: burlywood;
+            margin-right: 10px;
+        }
+         /* Attribute Spaced Selector */
+         p[class~="title"]{
+            color: orange;
+        }
+        /* Attribute Hyphenated Selector */
+        span[class|="hyphen"]{
+            background-color: goldenrod;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Attribute Present Selector -->
+    <a href="#" target="_blank">Home Page</a>
+
+    <!-- Attribute Equals Selector --> <br><br>
+    <a href="https://www.zoho.com/all-products.html">Explore All Zoho Products</a> <br><br>
+    Input Box:<input type="text" name="" id="">
+    Input Box:<input type="email" name="" id="">
+   
+    <!-- Attribute Contains Selector -->  <br> <br>
+    <span class="test">content 1</span>
+    <span class="demotests">content 2</span>
+    <span class="test-demo">content 3</span>
+    <span class="demo-test">content 4</span>
+
+     <!-- Attribute Begins With Selector --> <br> <br>
+     <p class="content">paragraph 1</p>
+     <p class="content-left">paragraph 2</p>
+     <p class="contenttext">paragraph 3</p>
+    
+     
+     <!-- Attribute Ends With Selector -->
+    <span class="end">End Selector 1</span>
+    <span class="till-end">End Selector 2</span>
+    <span class="startend">End Selector 3</span>
+
+    <!-- Attribute Spaced Selector -->
+    <p class="title">content 5</p>
+    <p class="title-name">content 6</p>
+    <p class="black title">content 7</p>
+
+    <!-- Attribute Hyphenated Selector -->
+    <h2>hyphen-separated and begins with the word stated</h2>
+    <span class="hyphen">Hyphen Attribute 1</span>
+    <span class="hyphen-symbol">Hyphen Attribute 2</span>
+
+</body>
+</html>

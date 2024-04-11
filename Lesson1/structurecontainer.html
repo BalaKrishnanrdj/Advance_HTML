@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 5px solid cadetblue;
+            background-color: skyblue;
+            height: 200px;
+            width: 200px;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 100px;
+        }
+        .container .box{
+            border: 3px solid cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Separate content from container</p>
+    <div class="container">
+        <div class="box">Box1</div>
+    </div>
+    <div class="box">Box2</div>
+</body>
+</html>

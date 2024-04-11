@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scale</title>
+  <style>
+    body {
+      margin: 30px 50px;
+    }
+    .original,
+    .box {
+      border-radius: 6px;
+      transform-style: preserve-3d;
+    }
+    .original {
+      background: #eaeaed;
+      border: 5px dashed lightgreen;
+      float: left;
+      margin: 12px 15px;
+    }
+    .box {
+      background: #2db34a;
+      height: 95px;
+      line-height: 95px;
+      text-align: center;
+      width: 95px;
+    }
+    figure {
+      margin: 0;
+    }
+    .box-1 {
+      transform: scale(.5);
+      transform-origin: right top;
+       /* x-axis: left center right  y-axis: top center bottom  */
+    }
+    .box-2 {
+      transform: scaleY(1.75) ;
+    }
+    .box-3 {
+      transform: scaleX(.75);
+    }
+  </style>
+</head>
+<body>
+  <div class="original">
+    <div class="spin">
+      <figure class="box box-1">Box 1</figure>
+    </div>
+  </div>
+  
+  <div class="original">
+    <div class="spin">
+      <figure class="box box-2">Box 2</figure>
+    </div>
+  </div>
+  <div class="original">
+    <div class="spin">
+      <figure class="box box-3">Box 2</figure>
+    </div>
+  </div>
+</body>
+</html>
+<!-- lengh % -->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .highlight {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3 <span>Highlighted</span></li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+
+  <script>
+    $(document).ready(function() {
+      // Select the second <li> element and add a highlight class to it
+        
+      $('li').first().addClass('highlight');
+      // $('li').eq(3).addClass('highlight');
+      // $('li').has('span').addClass('highlight');
+    });
+  </script>
+</body>
+</html>

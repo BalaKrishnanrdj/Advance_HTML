@@ -1,0 +1,163 @@
+/*Mixins */
+/*Default Arguments */
+/*variables Arguments */
+.portfolio {
+  border: 1px solid #9799a7;
+  overflow: auto;
+  padding: 10px; }
+  .portfolio ul {
+    list-style: none; }
+  .portfolio li {
+    float: left;
+    margin-left: 10px;
+    color: white;
+    -webkit-box-shadow: 5px 5px 2px white, inset 5px 5px 5px gray;
+    -moz-box-shadow: 5px 5px 2px white, inset 5px 5px 5px gray;
+    box-shadow: 5px 5px 2px white, inset 5px 5px 5px gray; }
+    .portfolio li:hover {
+      color: lightgreen; }
+
+.portfolio ul li {
+  background-color: orange; }
+
+h1 {
+  color: cornflowerblue; }
+
+p {
+  margin: 5px;
+  font: 1em "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  color: rgba(245, 245, 220, 0.25); }
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  border: 4px solid brown;
+  background: black;
+  color: white;
+  font-family: Baskerville, Palatino, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 30px; }
+  @media screen and (max-width: 960px) {
+    body {
+      width: 100%; } }
+
+a {
+  color: white;
+  margin-left: 40px; }
+  a:hover {
+    color: orange; }
+
+.btn {
+  background: linear-gradient(black, white); }
+  .no-cssgradients .btn {
+    background: url("book1.jpeg") 0 0 no-repeat;
+    color: black;
+    height: 50px;
+    background-size: cover; }
+  .btn .no-cssgradients {
+    margin: 10px; }
+
+/* Normal comment */
+/*Variable Interpolation */
+.division {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center; }
+
+.alert, .alert-error {
+  color: red;
+  padding: 10px 20px; }
+
+.alert-error {
+  background-color: white; }
+
+.box1, .box1 p,
+.box2 {
+  width: 49%;
+  position: relative;
+  height: 50px;
+  background-color: gray;
+  display: inline-block; }
+
+/*@import "import.sass" */
+.box1 p {
+  color: white;
+  font-size: 20px;
+  top: 0px;
+  position: absolute; }
+
+/*for loop */
+.col-1 {
+  font-size: 10px; }
+
+.col-2 {
+  font-size: 20px; }
+
+.col-3 {
+  font-size: 30px; }
+
+.col-4 {
+  font-size: 40px; }
+
+.col-5 {
+  font-size: 50px; }
+
+/*each loop */
+.uxd-logo {
+  background: url("/img/uxd.jpg"); }
+
+.rails-logo {
+  background: url("/img/rails.jpg"); }
+
+.html-logo {
+  background: url("/img/html.jpg"); }
+
+.css-logo {
+  background: url("/img/css.jpg"); }
+
+.div-1 {
+  font-size: 1.75em;
+  text-align: center;
+  width: 100%; }
+
+.div-2 {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%; }
+
+.div-3 {
+  font-size: 1.25em;
+  text-align: center;
+  width: 100%; }
+
+.div-4 {
+  font-size: 1em;
+  text-align: center;
+  width: 100%; }
+
+.div-5 {
+  font-size: 0.75em;
+  text-align: center;
+  width: 100%; }
+
+.div-6 {
+  font-size: 0.5em;
+  text-align: center;
+  width: 100%; }
+
+/*calculation */
+.width {
+  width: 46px;
+  width: 34px;
+  width: 240px;
+  width: 4px; }
+
+.NumberFunctions {
+  width: 250%;
+  width: 3px;
+  width: 3px;
+  width: 2px;
+  width: 2.5px; }

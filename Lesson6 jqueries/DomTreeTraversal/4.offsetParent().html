@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+    }
+    .element {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+    }
+    .offset-parent {
+      border: 3px solid yellow;
+    }
+    button{
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> first container
+  <div class="container"> second container
+    <div class="element">center element</div>
+  </div>
+  </div>
+  <button>Get Offset Parent</button>
+
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        // Get the offset parent of the element with class "element"
+        var offsetParent = $('.element').offsetParent();
+        offsetParent.addClass('offset-parent');
+      });
+    });
+  </script>
+</body>
+</html>

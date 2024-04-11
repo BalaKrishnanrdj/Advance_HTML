@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slice</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <ul>
+    <li>list element 1</li>
+    <li>list element 2</li>
+    <li>list element 3</li>
+    <li>list element 4</li>
+    <li>list element 5</li>
+  </ul>
+  <img src="../book1.jpeg">
+  <script>
+    $(document).ready(function(){
+      $('li').slice(2, 5).css({'color':'red','background-color':'cornflowerblue','list-style-type':'none'});
+      $('li').slice(1).css('color','blue');
+      $('img').attr('alt', 'Zoho Books');
+    });
+  </script>
+</body>
+
+</html>

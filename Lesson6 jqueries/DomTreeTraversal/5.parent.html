@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .parent1, .parent2 {
+      background-color: lightblue;
+      padding: 20px;
+      border: 1px solid black;
+
+    }
+    .child {
+      margin: 5px;
+      background-color: lightgray;
+      padding: 10px;
+    }
+    .highlight {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent1">First Parent Element
+  <div class="parent2">
+    Second Parent Element
+    <div class="child">
+      Child Element
+    </div>
+  </div>
+</div>
+
+  <button>Get Parent</button>
+
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        // Get the parent element of the element with class "child"
+        var parentElement = $('.child').parent(); 
+        parentElement.addClass('highlight');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target</title>
+    <style>
+        
+        a{
+            background-color: cornflowerblue;
+            padding: 5px 10px;
+            margin: 0 20px;
+        }
+        p,div,span{
+            border: 2px solid green;
+            margin: 10px;
+            padding: 20px;
+            display: block;
+        }
+        :target{
+            background-color: aquamarine;
+            font-size: 32px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#product">Product</a>
+    <a href="#div">Div</a>
+    <a href="#">Clear Target Style</a>
+        
+    <br><br>
+    <p id="home"><b>Home</b> <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia dolorum atque deleniti assumenda illum iusto sit repellendus. Iusto architecto quibusdam possimus quo laborum maxime earum expedita quidem, tempore modi!</p>
+    <span id="about"><b>About</b> <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia dolorum atque deleniti assumenda illum iusto sit repellendus. Iusto architecto quibusdam possimus quo laborum maxime earum expedita quidem, tempore modi!</span>
+    <p id="product"><b>Product</b> <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia dolorum atque deleniti assumenda illum iusto sit repellendus. Iusto architecto quibusdam possimus quo laborum maxime earum expedita quidem, tempore modi!</p>
+    <div id="div"><b>Div</b> <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, adipisci! Consequatur nulla soluta quo cupiditate perferendis culpa enim dolor recusandae, expedita officiis laboriosam quae veritatis amet impedit sit animi quia?</div>
+    
+</body>
+</html>

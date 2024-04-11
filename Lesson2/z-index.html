@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+        .box1{
+            position: relative;
+            background-color: cornflowerblue;
+            left: 50px;
+            z-index: 3;
+        }
+        .box2{
+            background-color: red;
+            position: fixed;
+            top: 125px;
+            left: 75px;
+            z-index: 2;
+        }
+        .box3{
+            background-color: orange;
+            position: absolute;
+            top: 100px;
+            z-index: 1;
+            left: 100px;
+        }
+        h3{ 
+            position: static;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body><h3>position elements they are occasionally placed on top of one another. To change the order of how these elements are stacked, also known as the z-axis, the z-index property is to be used. lpa et quaerat, sunt eum animi numquam! Ducimus sint consectetur facere quibusdam placeat aperiam! Hic, quod consectetur? Magnam pariatur eum repudiandae impedit maxime est facere nam voluptate fugit, consequatur perspiciatis adipisci? A quam dolorem quis eum voluptate incidunt quibusdam libero quas deleniti officiis? Adipisci fugiat nam illo fugit ipsam officiis sapiente possimus modi maxime ad, mollitia, corporis aut impedit, sed aliquam error commodi porro quasi obcaecati ex incidunt unde perferendis ea? Quas, placeat! Nostrum officiis, aliquam incidunt tenetur impedit magnam, perspiciatis voluptates voluptate commodi necessitatibus perferendis ratione. Eius molestiae delectus est voluptatem beatae totam atque, accusamus sit officiis quod reiciendis tenetur omnis id. Dolorem nihil minus iste ea. Architecto quaerat provident ipsa nostrum, neque repellat accusamus. Iste inventore non quia. Repellat perferendis, id consequatur consequuntur voluptatibus suscipit beatae recusandae esse, et magnam atque?</h3>
+<div class="box1 box">Box1</div>
+    <div class="box2 box">Box2</div>
+    <div class="box3 box">Box3</div>
+
+</body>
+</html>

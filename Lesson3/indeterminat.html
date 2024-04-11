@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkbox Pseudo-classes Example</title>
+<style>
+input[type="checkbox"]:checked {
+    border-color: green; 
+}
+
+input[type="checkbox"]:indeterminate {
+    background-color: yellow; 
+}
+input[type="checkbox"] {
+    padding: 5px;
+    margin: 10px;
+}
+
+/* Styling for indeterminate checkboxes */
+input[type="checkbox"]:checked + label {
+    border: 2px solid green; 
+}
+
+input[type="checkbox"]:not(:checked) + label {
+    background-color: yellow; 
+}
+</style>
+</head>
+<body>
+    <input type="checkbox" id="checkbox2" checked="indeterminate">
+    <label for="checkbox2">Indeterminate</label>
+    <input type="checkbox" id="checkbox1" checked>
+    <label for="checkbox1">Checked</label>
+
+    <input type="checkbox" id="checkbox1" checked>
+    <label for="checkbox1">Checked</label>
+
+    <input type="checkbox" id="checkbox2" checked>
+    <label for="checkbox2">Indeterminate</label>
+
+<script>
+    document.getElementById('checkbox2').indeterminate = true;
+</script>
+
+</body>
+</html>

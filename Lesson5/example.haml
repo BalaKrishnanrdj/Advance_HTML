@@ -1,0 +1,91 @@
+!!! 5
+:ruby
+  name="Balakrishnan"
+%html
+  %head
+    %title My First HAML Page
+  :css
+    body{
+      margin: 0 auto;
+      width: 80%;
+      background-color: lightpink;
+      border: 1px solid black;
+      height: 100vh;
+    }
+    img{
+      margin : 10px;
+      width: 200px
+    }
+    h1{
+      background-color: white;
+    }
+  %body
+    %h1 Hello, World!
+    %p
+      tgyhuji
+
+    %div
+      %p hello paragraph
+
+    %header
+      %h1 Hello World
+
+    %section
+      %p Lorem ipsum dolor sit amet.
+
+    %img{:src => "book1.jpeg", :alt => "Bala",:style=>"width:150px"}
+    %img{src: "book1.jpeg", alt: "Bala", style:"width:150px"}
+    %img(src="book1.jpeg" alt="Bala" style="width:150px")
+
+    %section.feature
+      %h3 This section having feature class name
+
+    %section.feature.special
+    %section#hello
+    %section#hello.feature(role="region")
+
+    .awesome
+    .awesome.lesson
+    #getting-started.lesson
+
+    %input(type="checkbox" checked)
+    %input(type="text" placeholder="Enter Number")
+
+    .author 
+      %h1 Bala
+      = 5+5
+      \=5+5
+      %h1 
+        =name
+
+    %div
+      / Commented line
+      Actual line
+    /
+      %div
+        Commented block
+    /![if IE]
+      %p condition true
+
+    %p
+      <div id="div">html code also used to create haml</div>
+    %p
+      #div This formate same for creating
+
+    %button#toggle-button Toggle Image
+    %img#image(style="display: none;" src="book1.jpeg")
+    
+  %script(src="javascript.js")
+  /
+    :javascript
+      var button = document.getElementById('toggle-button');
+      var image = document.getElementById('image');
+        
+      button.addEventListener('click', function() {
+        if (image.style.display === 'none') {
+          image.style.display = 'block';
+        } else {
+          image.style.display = 'none';
+        }
+      });
+  

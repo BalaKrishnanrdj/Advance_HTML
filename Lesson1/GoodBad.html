@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Bad1{
+            display: inline-block;
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px 80px;
+        }
+        .Bad2{
+            display: inline-block;
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px 80px;
+        }
+        .Good1,.Good2{
+            display: inline-block;
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>over qualified selectors reduce performance because <br>they force the browser to render 
+        each individual selector type from right to left</h1>
+    <div class="Bad1">Header</div>
+    <div class="Bad2">Body</div>
+    <br>
+    <div class="Good1">Social</div>
+    <div class="Good2">Media</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>perspective</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box{
+      height: 100px;
+      width: 100px;
+      background-color: black;
+      border: 2px solid silver;
+      transition: 3s all;
+
+    }
+    .box1:hover{
+      background-color: pink;
+      transform:translateZ(-70px);
+      /* transform:perspective(100px) translateZ(-70px); */
+      transition: 2s all;
+    }
+
+    .box2:hover{
+      background-color: pink;
+      /* transform: translateZ(70px); */
+      transform:perspective(100px) translateZ(70px);
+      transition: 2s all;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+</body>
+</html>

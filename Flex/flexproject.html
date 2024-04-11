@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex - Alignment project</title>
+<style>
+  .wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.wrapper > *{
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+}
+.header{
+  background-color: tomato;
+  height: 80px;
+}
+.footer{
+  height: 80px;
+  background-color: lightgreen;
+}
+.main{
+  text-align: left;
+  background-color: deepskyblue;
+  height: 300px;
+  font-size: 24px;
+}
+.aside1{
+  background-color: yellow;
+}
+.aside2{
+  background-color: hotpink;
+}
+@media screen and (min-width: 800px) {
+  .main{
+    flex: 3 ;
+    order: 2;
+  }
+  .aside1{
+    order: 1 ;
+  }
+  .aside2{
+    order: 3 ;
+  }
+
+  .footer{
+    order: 4;
+  }
+}
+@media screen and (min-width: 600px) {
+  .aside{
+    flex: 1;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>Header</h1>
+    </header>
+    <article class="main">
+      <p style="background-color: skyblue;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempore temporibus vel architecto eos laborum optio dolorem aspernatur soluta consequuntur nulla magnam error quod cumque ratione? Expedita consequuntur veniam necessitatibus.</p>
+    </article>
+    <aside class="aside aside1">
+      <h1>Aside 1</h1>
+    </aside>
+    <aside class="aside aside2">
+      <h1>Aside 2</h1>
+    </aside>
+    <footer class="footer">
+      <h1>Footer</h1>
+    </footer>
+  </div>
+</body>
+</html>

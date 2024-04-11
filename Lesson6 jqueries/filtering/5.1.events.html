@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Examples</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  // .after()
+  $('#item1').after('<p>Inserted after item 1</p>');
+
+  // .append()
+  $('#item2').append('<span>Appended to item 2</span>');
+
+  // .appendTo()
+  $('<p>Appended to item 3</p>').appendTo('#item3');
+
+  // .before()
+  $('#item4').before('<p>Inserted before item 4</p>');
+
+  // .clone()
+  $('#item5').clone().appendTo('#container');
+
+  // .detach()
+  $('#item6').detach();
+
+  // .empty()
+  $('#item7').empty();
+
+  // .html()
+  var htmlContent = $('#item8').html();
+  console.log(htmlContent);
+
+  // .insertAfter()
+  $('<p>Inserted after item 9</p>').insertAfter('#item9');
+
+  // .insertBefore()
+  $('<p>Inserted before item 10</p>').insertBefore('#item10');
+
+  // .prepend()
+  $('#item11').prepend('<span>Prepended to item 11</span>');
+
+  // .prependTo()
+  $('<p>Prepended to item 12</p>').prependTo('#item12');
+
+  // .remove()
+  $('#item13').remove();
+
+  // .replaceAll()
+  $('<div>Replaced with item 14</div>').replaceAll('#item14');
+
+  // .replaceWith()
+  $('#item15').replaceWith('<span>Replaced item 15</span>');
+
+  // .text()
+  var textContent = $('#item16').text();
+  console.log(textContent);
+
+  // .unwrap()
+  $('#item17').unwrap();
+
+  // .wrap()
+  $('#item18').wrap('<div class="wrapper"></div>');
+
+  // .wrapAll()
+  $('.wrap-all').wrapAll('<div class="wrapper"></div>');
+
+  // .wrapInner()
+  $('#item20').wrapInner('<span class="wrapper"></span>');
+});
+</script>
+</head>
+<body>
+
+<div id="container">
+  <div id="item1">Item 1</div>
+  <div id="item2">Item 2</div>
+  <div id="item3">Item 3</div>
+  <div id="item4">Item 4</div>
+  <div id="item5">Item 5</div>
+  <div id="item6">Item 6</div>
+  <div id="item7">Item 7</div>
+  <div id="item8">Item 8</div>
+  <div id="item9">Item 9</div>
+  <div id="item10">Item 10</div>
+  <div id="item11">Item 11</div>
+  <div id="item12">Item 12</div>
+  <div id="item13">Item 13</div>
+  <div id="item14">Item 14</div>
+  <div id="item15">Item 15</div>
+  <div id="item16">Item 16</div>
+  <div id="item17">Item 17</div>
+  <div id="item18">Item 18</div>
+  <div class="wrap-all">
+    <div id="item19">Item 19</div>
+    <div id="item20">Item 20</div>
+  </div>
+</div>
+
+</body>
+</html>

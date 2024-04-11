@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  height: 200px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  flex-basis: 100px;
+  height: 50px;
+  margin: 10px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The align-self Property</h1>
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div style="align-self: flex-end">3</div>
+  <div style="align-self: flex-start">4</div>
+  <div style="align-self: center">5</div>
+  <div style="align-self: self-end">6</div>
+</div>
+
+<h3>The align-self property overrides the align-items property of the container.</h3>
+
+</body>
+</html>
+
+

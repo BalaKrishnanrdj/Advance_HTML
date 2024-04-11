@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    div{
+      margin: 10px;
+    }
+    .targets {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div class="ancestor">
+    <div>
+      <div>
+        <div id="target">
+          Target Element
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button>Highlight Ancestors Until .ancestor</button>
+
+  <script>
+    $(document).ready(function() {
+      $('button').click(function() {
+        // Select all ancestor elements of the element with id "target" until an ancestor with class "ancestor" is reached
+        var ancestorElements = $('#target').parentsUntil('.ancestor');
+        ancestorElements.addClass('targets');
+      });
+    });
+  </script>
+</body>
+</html>

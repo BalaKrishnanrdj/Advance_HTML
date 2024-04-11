@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <style>
+    body{
+      background-color: black;
+    }
+    .values{
+      width: 330px;
+      height: 330px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+   
+    .circle{
+      width: 30px;
+      height: 30px;
+      background-color: aqua;
+      animation: circle 5s linear infinite;
+    }
+    @keyframes circle {
+      0%{
+        transform: rotate(0deg) translate(-165px) ;
+      }
+      100%{
+        transform: rotate(360deg) translate(-165px) ;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box1 values">
+    <div class="circle values"></div>
+  </div>
+</body>
+</html>

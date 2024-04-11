@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+    .box-set {
+    border: 2px solid black;
+    /* content: "";
+    display: table;
+    clear: both; */
+    }
+    .box{
+    background: #2db34a;
+    float: left;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    }
+    .boxs{
+    background: #2db34a;
+    display: inline-block;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    }
+    .boxs-container{
+        border: 2px solid green;
+    }
+   
+
+   
+    </style>
+</head>
+<body>
+    <div class="boxs-container">
+        <div class="boxs">container Boxs1</div>
+        <div class="boxs">container Boxs2</div>
+        <div class="boxs">container Boxs3</div>
+    </div>
+    <h3><ul>
+        <li>container may collapse or lose its height because it doesn't recognize the height of the floating elements.</li>
+    </ul></h3>
+    <div class="box-set">
+        <figure class="box">Box 1</figure>
+        <figure class="box">Box 2</figure>
+        <figure class="box box3">Box 3</figure>
+    </div>
+    
+</body>
+</html>

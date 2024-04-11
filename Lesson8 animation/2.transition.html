@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: #2db34a;
+      border-radius: 6px;
+      cursor: pointer;
+      height: 95px;
+      line-height: 95px;
+      text-align: center;
+      /* transition: background-color .2s linear, border-radius 1s ease-in 1s; */
+      transition-property: background-color, border-radius;
+      transition-duration: .2s, 1s;
+      transition-timing-function: linear, ease-in;
+      transition-delay: 1s; 
+      width: 95px;
+    }
+    .box:hover {
+      background: yellowgreen;
+      border-radius: 50%;
+    }
+    .box:active{
+      background: red;
+      border-radius: 25%;
+    }
+</style>
+</head>
+<body>
+  <div class="box">Box</div>
+</body>
+</html>

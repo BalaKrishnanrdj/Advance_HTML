@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Sprite Example</title>
+  <style>
+    img{
+      border: 2px solid black;
+    }
+    .red {
+    background-color: red;
+    width: 60px;
+    height: 100px;
+    background-image: url('/image/zohologo.png');
+    background-repeat: no-repeat;
+    /* Position the background image to display only the desired part */
+    background-position: -15px 30px;
+    }
+    .yellow{
+        background-color: yellow;
+        width: 60px;
+        height: 100px;
+        background-image: url('/image/zohologo.png');
+        background-repeat: no-repeat;
+        /* Position the background image to display only the desired part */
+        background-position: -155px 30px;
+    }
+  </style>
+</head>
+<body>
+  <h3 style="color: cornflowerblue;">picture taking all those small pictures and putting them together into one big picture. This big picture is called an "image sprite."</h3>
+  <div class="red "><h3>Red</h3></div>
+  <div class="yellow"><h3>Yellow</h3></div>
+  <img src="/image/zohologo.png" alt="">
+  <img src="/image/sprits.png" alt="ZohoLogo" height="200px" width="300px">
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overflow Auto Example</title>
+  <style>
+    h2{ font-variant: small-caps;}
+    .container {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    overflow: auto; 
+    /* Add overflow:auto; to contain floating elements */
+    }
+
+    .box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    float: left; /* Float the elements */
+    margin: 10px;
+    }
+    /* .floatbox{
+        margin: 20px auto;
+        height: 400px;
+        width: 300px;
+        border: 3px solid cornflowerblue;
+        overflow: auto;
+    } */
+    img{
+        border: 2px solid black;
+        margin: 10px;
+    }
+    .img1{
+        float: left;
+        width: 150px;
+    }
+    .img2{
+        clear: left;
+        float: right;
+    }
+    .img3{
+        clear: right;
+        float: left;
+    }
+  </style>
+</head>
+<body>
+    <h2> Prevents layout issues caused by content overflow. <br> It ensures that the container maintains its height and layout integrity by <br> adding scrollbars when necessary.</h2>
+  <!-- <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div> -->
+  <div class="floatbox" >
+    <img src="/image/book1.jpeg" alt="" class="img1" height="100px">
+    <div><img src="/image/bigin1.png" alt="" class="img2" height="100px"></div>
+    <img src="/image/booking1.png" alt="" class="img3" height="100px">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sint cupiditate iure eaque atque fugiat dolorum quis quisquam vel maxime hic iusto at quam ducimus illo impedit laudantium eius, eos nesciunt esse, error omnis? Rerum ducimus aperiam iusto voluptas vitae, hic nisi maxime quae a tenetur inventore ut consequatur dolor.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sint cupiditate iure eaque atque fugiat dolorum quis quisquam vel maxime hic iusto at quam ducimus illo impedit laudantium eius, eos nesciunt esse, error omnis? Rerum ducimus aperiam iusto voluptas vitae, hic nisi maxime quae a tenetur inventore ut consequatur dolor.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sint cupiditate iure eaque atque fugiat dolorum quis quisquam vel maxime hic iusto at quam ducimus illo impedit laudantium eius, eos nesciunt esse, error omnis? Rerum ducimus aperiam iusto voluptas vitae, hic nisi maxime quae a tenetur inventore ut consequatur dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum molestiae, odit rem quaerat quod vero suscipit rerum corporis! Commodi illum labore veritatis rem quibusdam possimus aliquam sunt ducimus porro omnis maxime animi, placeat quos quo temporibus officiis sed doloremque vel voluptatem ratione natus sapiente aut suscipit. Nemo eos sint et magni non perspiciatis quod consectetur quibusdam nulla adipisci corporis error dolorem ad pariatur, eligendi tempora saepe itaque? Omnis laudantium dignissimos dolorem eaque obcaecati aliquam, dolorum explicabo fuga repellendus ratione quia autem esse iste sit repellat maxime, veniam porro a pariatur! Ipsam ipsa voluptatibus delectus aperiam nemo quam sequi iste.</p>
+ 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum molestiae, odit rem quaerat quod vero suscipit rerum corporis! Commodi illum labore veritatis rem quibusdam possimus aliquam sunt ducimus porro omnis maxime animi, placeat quos quo temporibus officiis sed doloremque vel voluptatem ratione natus sapiente aut suscipit. Nemo eos sint et magni non perspiciatis quod consectetur quibusdam nulla adipisci corporis error dolorem ad pariatur, eligendi tempora saepe itaque? Omnis laudantium dignissimos dolorem eaque obcaecati aliquam, dolorum explicabo fuga repellendus ratione quia autem esse iste sit repellat maxime, veniam porro a pariatur! Ipsam ipsa voluptatibus delectus aperiam nemo quam sequi iste.</p>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- .box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+.box-set:after {
+  clear: both;
+} -->

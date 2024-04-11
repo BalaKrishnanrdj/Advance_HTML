@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect on Hover</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #box {
+      width: 200px;
+      height: 150px;
+      background-color: lightblue;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">Hover over me</div>
+
+  <script>
+    $(document).ready(function() {
+      $('#box').hover(function() {
+        // window.location.href = 'https://www.google.com';
+        window.open('https://www.google.com', '_blank');
+      });
+    });
+  </script>
+</body>
+</html>

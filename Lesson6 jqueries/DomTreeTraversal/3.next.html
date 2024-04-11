@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .current {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+
+  <button>Highlight Next</button>
+
+  <script>
+    $(document).ready(function() {
+      
+      $('button').click(function() {
+        // Find the next sibling element of the first list item and add class "current" to it
+        $('li:nth-child(2)').next().addClass('current');  
+        /*.nextAll*/
+        // $('li:nth-child(2)').nextUntil('li:nth-child(5)').addClass('current');
+      });
+    });
+  </script>
+</body>
+</html>

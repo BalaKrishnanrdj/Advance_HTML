@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>:not() Pseudo-class Example</title>
+<style>
+/* Selecting all Element except those with a class of "exclude" */
+h1:not(.exclude) {
+    color: cornflowerblue;
+}
+p:not(.exclude) {
+    background-color: palevioletred;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The negation pseudo-class, represented by :not(), <br>
+    allows you to select elements that do not match a specified selector.</h1>
+<p>This paragraph will be blue.</p>
+<p class="exclude">This paragraph will not be blue.because this class name exclude</p>
+<p>This paragraph will be blue.</p>
+
+<h1 class="exclude">That do not match a specified selector</h1>
+
+</body>
+</html>

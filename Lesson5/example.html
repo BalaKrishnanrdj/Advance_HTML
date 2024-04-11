@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First HAML Page</title>
+</head>
+<style>
+  body{
+    margin: 0 auto;
+    width: 80%;
+    background-color: lightpink;
+    border: 1px solid black;
+    height: 100vh;
+  }
+  img{
+    margin : 10px;
+    width: 200px
+  }
+  h1{
+    color: white;
+    background-color: white;
+  }
+</style>
+<body>
+<h1>Hello, World!</h1>
+<p>
+tgyhuji
+</p>
+<div>
+<p>hello paragraph</p>
+</div>
+<header>
+<h1>Hello World</h1>
+</header>
+<section>
+<p>Lorem ipsum dolor sit amet.</p>
+</section>
+<img alt='Bala' src='book1.jpeg' style='width:150px'>
+<img alt='Bala' src='book1.jpeg' style='width:150px'>
+<img alt='Bala' src='book1.jpeg' style='width:150px'>
+<section class='feature'>
+<h3>This section having feature class name</h3>
+</section>
+<section class='feature special'></section>
+<section id='hello'></section>
+<section class='feature' id='hello' role='region'></section>
+<div class='awesome'></div>
+<div class='awesome lesson'></div>
+<div class='lesson' id='getting-started'></div>
+<input checked type='checkbox'>
+<input placeholder='Enter Number' type='text'>
+<div class='author'>
+<h1>Bala</h1>
+10
+=5+5
+<h1>
+Balakrishnan
+</h1>
+</div>
+<div>
+<!-- Commented line -->
+Actual line
+</div>
+<!--
+<div>
+Commented block
+</div>
+-->
+<!--[if IE]><!-->
+<p>condition true</p>
+<!--<![endif]-->
+<p>
+<div id="div">html code also used to create haml</div>
+</p>
+<p>
+<div id='div'>This formate same for creating</div>
+</p>
+<button id='toggle-button'>Toggle Image</button>
+<img id='image' src='book1.jpeg' style='display: none;'>
+</body>
+<script src='javascript.js'></script>
+<!--
+<script>
+  var button = document.getElementById('toggle-button');
+  var image = document.getElementById('image');
+    
+  button.addEventListener('click', function() {
+    if (image.style.display === 'none') {
+      image.style.display = 'block';
+    } else {
+      image.style.display = 'none';
+    }
+  });
+</script>
+-->
+</html>

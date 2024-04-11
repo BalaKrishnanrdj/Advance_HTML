@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="clearfix">
+  <title>Clearfix Example</title>
+  <style>
+    .container {
+    border: 1px solid #ccc;
+    }
+
+    .box {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    float: left; /* Float the elements left */
+    margin: 10px;
+    }
+
+    /* Clearfix Pseudo-Elements  */
+    .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+  </style>
+</head>
+<body>
+    <h3><ul>
+        <li>container may collapse or lose its height because it doesn't recognize the height of the floating elements.</li>
+        <li>using clearfix: you tell the browser to clear any floated elements inside it</li>
+    </ul></h3>
+  <div class="container clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>

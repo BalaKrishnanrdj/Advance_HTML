@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-Child</title>
+    <style>
+       ul li:nth-child(3){
+        color: cornflowerblue;
+       }
+       ul p:nth-child(2){
+        color: cornflowerblue;
+       }
+       p:nth-last-child(1){
+        color: red;
+       }
+       p:only-child{
+        background-color: aqua;
+       }
+       h1:only-child{
+        color: yellow;
+       }
+
+    </style>
+</head>
+<body>
+<h1>This is H1 Tag</h1>
+<ul>
+    <p>paragraph tag first child</p>
+    <p>paragraph tag second child</p>
+    <li>Para 1</li>
+    <li>Para 2</li>
+    <li>Para 3</li>
+    <li>Para 4</li>
+    <li>Para 5</li>
+    <li>Para 6</li>
+    <li>Para 7</li>
+    <li>Para 8</li>
+</ul>
+<ul>
+    <li>Para 1</li>
+    <p>paragraph tag second child</p>
+    <li>Para 2</li>
+    <li>Para 3</li>
+    <li>Para 4</li>
+</ul>
+<div>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>
+</div>
+
+   <p>outter 1</p>
+   <p>outter 2</p>
+   <p>outter 3</p>
+
+<div>
+    <p>This Paragraph for only one child for the parent</p>
+    <!-- <p>This is second Paragraph the parent</p> -->
+</div>
+<div>
+    <h1>This h1 having the Parent</h1>
+</div>
+
+</body>
+</html>

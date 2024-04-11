@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      /* display: none; */
+      background-color: white;
+      /* visibility: hidden; */
+      /* border-radius: 20px; */
+      animation: display 10s ease-in-out alternate forwards;
+    }
+    @keyframes display {
+      from{
+        /* display: none; */
+        /* height: 0px;
+        width: 0px; */
+        opacity: 0;
+        visibility: hidden;
+        background-color: yellowgreen;
+        /* transform: translateX(0px); */
+      }
+      to{
+        /* display: block; */
+        /* height: 100px;
+        width: 100px; */
+        visibility: visible;
+        opacity: 1;
+        /* border-radius: 50%; */
+        background-color: aquamarine;
+        /* transform: translateX(400px); */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

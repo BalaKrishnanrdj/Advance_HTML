@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+  <style>
+    body{
+      background-color: beige;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box1{
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      border: 2px solid palevioletred;
+      border-radius: 5px;
+      transition: all 1s ease;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transform: translate(-50%,-50%);
+    }
+    .box1:hover{
+      border: 5px solid palevioletred;
+      border-radius: 50%;
+    }
+    li{
+      display: inline-block;
+      margin-left: 4px;
+      padding:0px 0px 3px 0px;
+      
+    }
+    li::after{
+      content: "";
+      /* margin: auto; */
+      display: block;
+      height: 3px;
+      width: 0%;
+      background-color: transparent;
+      transition: all 2s ease;
+    }
+    .box1:hover li::after{
+      width: 100%;
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <h3 style="margin-bottom: 5px;">Hover Me</h3>
+    <div>
+    <li>Home</li>
+    <li>About</li>
+    <li>Zoho</li>
+    <li>Products</li>
+  </div>
+  </div>
+</body>
+</html>

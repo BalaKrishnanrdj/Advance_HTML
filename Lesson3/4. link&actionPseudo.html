@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: lightskyblue;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+input{
+  outline: none;
+}
+.Box1{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    transition: all 1s;
+
+}
+.Box1:hover{
+    border-radius: 50%;
+    background-color: cornflowerblue;
+}
+/*input focus*/
+input:focus{
+  border: 2px solid greenyellow;
+  height: 30px;
+  width: 200px;
+}
+input[placeholder="enabled"]:enabled{
+  background-color: orange;
+}
+input:disabled{
+  background-color: rgb(219, 140, 140);
+}
+
+</style>
+</head>
+<body>
+
+<h2>Link Pseudo-classes(link,visited),User Action Pseudo-classes(hover,active,focus)</h2>
+
+<h3><b>link:</b>  link has not been visited the :link pseudo-class comes</h3>
+<h3><b>visited:</b> A user has already visited based on their browsing history.</h3>
+
+<p><b><a href="https://www.nasa.gov/" target="_blank">Space World</a></b></p>
+<p><b><a href="https://www.zoho.com/in/books/" >Zoho Books</a></b></p>
+<p><b><a href="https://www.zoho.com/en-in/crm/" >Zoho CRM</a></b></p>
+<p><b><a href="https://www.zoho.com/in/financeplus/" target="_blank">Zoho Finance Plues</a></b></p>
+<div class="Box1"></div>
+
+
+<h3><b>User Action:</b>Based on a users actions dynamically applied to an element.</h3>
+
+Focus point of the page:<input type="text">
+
+<h2>User Interface State Pseudo-classes</h2>
+Default Enabled: <input type="text" placeholder="enabled">
+Disabled: <input type="text" placeholder="disabled" disabled>
+</body>
+</html>

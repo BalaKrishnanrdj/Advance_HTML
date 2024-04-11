@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #box {
+      width: 200px;
+      height: 150px;
+      background-color: lightblue;
+      padding: 10px;
+      margin-bottom: 20px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <section></section>
+  <a href="" target="_blank">A with Target</a>
+
+  <div id="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in urna a metus convallis hendrerit. Ut vitae fringilla justo. Donec ac velit purus.</div>
+
+  <button id="btnAddClass">Add Class</button>
+  <button id="btnAttr">Set Attribute</button>
+  <button id="btnHasClass">Has Class</button>
+  <button id="btnProp">Toggle Property</button>
+  <button id="btnRemoveAttr">Remove Attribute</button>
+  <button id="btnRemoveClass">Remove Class</button>
+  <button id="btnRemoveProp">Remove Property</button>
+  <button id="btnToggleClass">Toggle Class</button>
+  <button id="btnVal">Set Value</button>
+
+  <script>
+    $(document).ready(function() {
+      $('section').prepend('<h3>Featured</h3>');
+      $('a[target="_blank"]').after('<em>New window.</em>');
+      $('h1').text('This Text Comes By Js');
+      // .val()
+      $('#btnVal').click(function() {
+        $('#box').val('New text');
+      });
+
+      // .css()
+      var box = $('#box');
+      var width = box.css('width');
+      console.log('Width of the box:', width);
+
+      // .height()
+      var height = box.height();
+      console.log('Height of the box:', height);
+
+      // .innerHeight()
+      var innerHeight = box.innerHeight();
+      console.log('Inner height of the box (including padding):', innerHeight);
+
+      // .innerWidth()
+      var innerWidth = box.innerWidth();
+      console.log('Inner width of the box (including padding):', innerWidth);
+
+      // .offset()
+      var offset = box.offset();
+      console.log('Offset of the box from the document:', offset);
+
+      // .outerHeight()
+      var outerHeight = box.outerHeight();
+      console.log('Outer height of the box (including padding and border):', outerHeight);
+
+      // .outerWidth()
+      var outerWidth = box.outerWidth();
+      console.log('Outer width of the box (including padding and border):', outerWidth);
+
+      // .position()
+      var position = box.position();
+      console.log('Position of the box relative to its offset parent:', position);
+
+      // .scrollLeft()
+      var scrollLeft = box.scrollLeft();
+      console.log('Scroll left position of the box:', scrollLeft);
+
+      // .scrollTop()
+      var scrollTop = box.scrollTop();
+      console.log('Scroll top position of the box:', scrollTop);
+
+      // .width()
+      var boxWidth = box.width();
+      console.log('Width of the box:', boxWidth);
+    });
+  </script>
+</body>
+</html>

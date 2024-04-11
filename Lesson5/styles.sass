@@ -1,0 +1,159 @@
+//variables
+$font-base: 1em
+$serif: "Helvetica Neue", Arial, "Lucida Grande", sans-serif
+$grid: 16
+$column: 40px
+$gutter: 20px
+$container: ($column * $grid) + ($gutter * $grid)
+
+
+/*Mixins*/
+@mixin toggle($color, $color-hover)
+  color: $color
+  &:hover
+    color: $color-hover
+  +toggle($color: yellow, $color-hover: green)
+
+/*Default Arguments*/
+@mixin btn($color: white, $color-hover: red)
+  color: $color
+  &:hover
+    color: $color-hover
+
+/*variables Arguments*/
+@mixin box-shadow($shadow...)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+
+$shay: bala  
+
+.portfolio
+  border: 1px solid #9799a7
+  overflow: auto
+  padding: 10px
+  ul
+    list-style: none
+  li
+    float: left
+    margin-left: 10px
+    +btn($color-hover: lightgreen)
+    +box-shadow(5px 5px 2px white, inset 5px 5px 5px gray)
+
+
+.portfolio ul li
+  background-color: orange
+
+h1
+  color: cornflowerblue
+
+$CB: beige
+p
+  margin: 5px
+  font: $font-base $serif
+  color: rgba($CB, .25)
+
+body
+  width: 800px
+  margin: 0 auto
+  border: 4px solid brown
+  @if $shay == bala
+    background: black
+  @else if $shay == krishnan
+    background: gray
+  @else
+    background: white
+  color: white
+  font:
+    family: Baskerville, Palatino, serif
+    style: italic
+    weight: 600
+    size: 30px
+  @media screen and (max-width: $container)
+    width: 100%
+
+a
+  color: white
+  margin-left: 40px
+  &:hover
+    color: orange
+
+.btn
+  background: linear-gradient(black, white)
+  .no-cssgradients &
+    background: url("book1.jpeg") 0 0 no-repeat
+    color: black
+    height: 50px
+    background-size: cover
+  .no-cssgradients
+    margin: 10px 
+/* Normal comment */  
+// Omitted comment
+
+/*Variable Interpolation*/
+$location: division
+$W: width
+$H: height
+
+.#{$location}
+  #{$H}: 50px
+  #{$W}: 100%
+  background-color: white
+  color: black
+  text-align: center
+
+
+.alert
+  color: red
+  padding: 10px 20px
+.alert-error
+  @extend .alert
+  background-color: white
+
+.box1,
+.box2
+  width: 49%
+  position: relative
+  height: 50px
+  background-color: gray
+  display: inline-block 
+
+/*@import "import.sass"*/
+
+.box1 p
+  @extend .box1
+  color: white 
+  font-size: 20px 
+  top: 0px
+  position: absolute
+
+/*for loop*/
+@for $col from 1 to 6
+  .col-#{$col}
+    font-size: 10px * $col
+
+/*each loop*/
+@each $class in uxd, rails, html, css
+  .#{$class}-logo
+    background: url("/img/#{$class}.jpg")
+
+$heading: 1
+@while $heading <= 6
+  .div-#{$heading}
+    font-size: 2em - ($heading * .25em)
+    text-align: center
+    width: 100%
+  $heading: $heading + 1
+
+/*calculation*/
+.width
+  width: 40px + 6
+  width: 40px - 6
+  width: 40px * 6
+  width: 40px % 6
+.NumberFunctions
+  width: percentage(2.5)
+  width: round(2.5px)
+  width: ceil(2.5px)
+  width: floor(2.5px)
+  width: abs(-2.5px)

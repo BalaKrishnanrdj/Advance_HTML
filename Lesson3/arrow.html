@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+        h1{
+            height: 30px;
+            position: relative;
+            display: inline-block;
+            background-color: green;
+            padding-left: 15px;
+        }
+        h1::after,h1::before{
+            height: 0;
+            width: 0;
+            position: absolute;
+            content: ""
+
+        }
+        h1::after{
+            right: -15px;
+            border-left: 15px solid orange;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+        h1::before{
+            left: -15px;
+            border-top: 15px solid red;
+            border-bottom: 15px solid green;
+            border-left: 15px solid blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+</body>
+</html>
